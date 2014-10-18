@@ -25,17 +25,14 @@ Credit must be given where credit is due. Most of this work was made possible by
 
 3. Clone this repository.
 
-4. The directory "webroot" in the root directory of the clone will act as your root web folder.
+4. The directory "drupal" in the root directory of the clone will act as your root web folder.
 
 5. Open up terminal, change directory to this git repo root, and start the vagrant box.
 
-	$ vagrant up
+	`$ vagrant up`
 
 6. You're all set up. The webserver will now be accessible from [http://localhost:8888](http://localhost:8888)
 
-7. Clone MyIEP inside this repository inside the webroot folder.
-
-	$ git clone https://github.com/ChelseaSchool/MyIEP.git
 
 ## Included in the Stack
 
@@ -53,3 +50,5 @@ Credit must be given where credit is due. Most of this work was made possible by
 * vim
 * htop
 * phpmyadmin
+* drush
+* git
