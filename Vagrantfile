@@ -19,8 +19,8 @@ Vagrant.configure("2") do |config|
   # Forward guest port 80 to host port 8888 and name mapping
   config.vm.network :forwarded_port, guest: 80, host: 8888
 
-  config.vm.synced_folder "drupal/", "/vagrant/drupal/", :owner => "www-data", :group => "vagrant"
-
+  # config.vm.synced_folder "drupal/", "/vagrant/drupal/", :owner => "www-data", :group => "vagrant"
+   config.vm.synced_folder "./", "/vagrant", :owner => "vagrant", :group => "www-data", mount_options: ["dmode=775,fmode=664"]
    config.vm.provision "shell",
     inline: $drupal
  end
